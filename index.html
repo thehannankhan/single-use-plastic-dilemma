@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<title>Single Use Plastic Dilemma</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+body, html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+body,h1,h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+}
+h3,h4,h5,h6 {
+  font-family: "Fira-Code", sans-serif;
+  font-weight: 100;
+}
+p {
+  font-family: "Inconsolata", sans-serif;
+  font-weight: 100;
+  text-align: center;
+}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("green-bg.jpg");
+  min-height: 90%;
+}
+.title-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  font-size: 5em;
+}
+.btn:hover {
+  background-color: red;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity" id="myNavbar">
+    <a href="https://github.com/thehannankhan" class="w3-bar-item w3-button w3-hover"><i class="fa fa-github" style="font-size:40px;"></i></a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small title-text">Should you use single-use plastic?</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium title-text btn"><b>Should you use single-use plastic?</b></span>
+    <p><a href="#about" class="w3-button w3-xlarge w3-black w3-hover-indigo">Find out...</a></p>
+  </div>
+</header>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-black w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center" style="margin-bottom:64px, font-size:8em">No.</h1>
+    <p>About one trillion single-use plastic bags are used annually across the globe. That’s nearly 2 million every minute. The world produces more than 14 million US tons of polystyrene (plastic foam) each year. Americans alone throw away around 25 billion Styrofoam cups every year.<br>Be the change!</p>
+    <img src="plastic.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom w3-grayscale" alt="Restaurant">  
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-padding-48 w3-xlarge" style="background-color: rgb(74, 69, 135); color: rgb(255, 255, 255);">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-black">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
